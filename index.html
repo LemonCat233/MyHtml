@@ -6,8 +6,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
         
         :root {
+            --global-white: 255, 255, 255;
             --helloer-bg: linear-gradient(45deg, #3D7EAA, #FFE47A);
-            --helloer-txt: 255, 255, 255, 1;
+            --helloer-txt: var(--global-white), 1;
             --helloer-font: "Noto Sans SC", serif;
         }
 
@@ -29,7 +30,7 @@
         }
 
         .world-helloer h1 {
-            color: rgba(var(--helloer-txt);
+            color: rgba(var(--helloer-txt));
             text-align: center;
             font-weight: 600;
         }
